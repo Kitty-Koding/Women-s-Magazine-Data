@@ -36,11 +36,11 @@
             var resultHtml = 'not found, try searching somthing less specific.';
             
             for (var i = 0; i < pdata.length; i++) {
-                for(var j = 0; j <pdata[i].length;j++){}
-                if (pdata[i][j].toLowerCase().includes(sTerm)) {
-                    resultHtml += '<div>' + pdata[i].join(', ') + '</div>';
+                for(var j = 0; j <pdata[i].length;j++){
+                    if (pdata[i][j].toLowerCase().includes(sTerm)) {
+                        resultHtml += '<div>' + pdata[i].join(', ') + '</div>';
+                    }
                 }
-            }
             }
             
             document.getElementById("response").innerHTML = resultHtml;
