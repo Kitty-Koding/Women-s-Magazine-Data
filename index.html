@@ -28,7 +28,7 @@
             var sTerm = document.getElementById("Inp").value.toLowerCase();
             for(var i = 0;i!==pdata.length;i++){
                 if(pdata[i][2].includes(sTerm)){
-
+                    document.getElementById("res").innerHTML+=pdata[i];
                 }
             }
         });
