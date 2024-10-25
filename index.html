@@ -25,6 +25,7 @@
             }
         }
         document.getElementById("btn").addEventListener("click",function(){
+            document.getElementById("js").textContent="clicked";
             var sTerm = document.getElementById("Inp").value.toLowerCase();
             for(var i = 0;i!==pdata.length;i++){
                 if(pdata[i][2].includes(sTerm)){
