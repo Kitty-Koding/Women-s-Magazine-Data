@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Englishwoman's Domestic Magazine Search Tool</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -107,16 +107,16 @@
             }
         }
         
-        document.getElementById("js").textContent = "Beeton Magezine Search Tool";
+        document.getElementById("js").textContent = '<span style="font-style: italic;">Englishwoman\'s Domestic Magazine</span> Search Tool';
         
         document.getElementById("btn").addEventListener("click", function() {
             var sTerm = document.getElementById("Inp").value.toLowerCase();
-            var resultHtml = 'not found, try searching somthing less specific.';
+            var resultHtml = 'not found, try searching something less specific.';
             
             for (var i = 0; i < pdata.length; i++) {
                 for(var j = 0; j <pdata[i].length;j++){
                     if (pdata[i][j].toLowerCase().includes(sTerm)) {
-                        if(resultHtml==='not found, try searching somthing less specific.'){
+                        if(resultHtml==='not found, try searching something less specific.'){
                             resultHtml='';
                         }
                         resultHtml += '<div>Title: '+pdata[i][2]+' | Genre: ' + pdata[i][0] + ' | Page#: '+pdata[i][3]+' | Link: <a href="'+magezines[pdata[i][4].split('')[1]-1][pdata[i][4].split('')[3]-1]+'">Click</a> | Additional Notes: '+pdata[i][10]+'</div>';
