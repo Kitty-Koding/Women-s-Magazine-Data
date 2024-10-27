@@ -16,7 +16,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
             margin: 0;
             padding: 20px;
         }
@@ -96,6 +95,7 @@
             ["https://archive.org/details/sim_englishwomans-domestic-magazine_1852-1862_1_0","https://archive.org/details/sim_englishwomans-domestic-magazine_1852-1862_2_0","https://archive.org/details/sim_englishwomans-domestic-magazine_1852-1862_3_0","https://archive.org/details/sim_englishwomans-domestic-magazine_1852-1862_4_0","https://archive.org/details/sim_englishwomans-domestic-magazine_1852-1862_5_0","https://archive.org/details/sim_englishwomans-domestic-magazine_1862-1868_6","https://archive.org/details/sim_englishwomans-domestic-magazine_1862-1868_7/mode/2up","https://archive.org/details/sim_englishwomans-domestic-magazine_1862-1868_8/mode/2up","https://archive.org/details/sim_englishwomans-domestic-magazine_1862-1868_9"],
             ["https://archive.org/details/sim_englishwomans-domestic-magazine_1862-1868_1/mode/2up","https://archive.org/details/sim_englishwomans-domestic-magazine_1862-1868_3/page/n1/mode/2up","https://archive.org/details/sim_englishwomans-domestic-magazine_1862-1868_3/page/n1/mode/2up","https://archive.org/details/sim_englishwomans-domestic-magazine_1862-1868_4","https://archive.org/details/sim_englishwomans-domestic-magazine_1868-1872_5","https://archive.org/details/sim_englishwomans-domestic-magazine_1868-1872_6/mode/2up","https://archive.org/details/sim_englishwomans-domestic-magazine_1868-1872_7","https://archive.org/details/sim_englishwomans-domestic-magazine_1868-1872_8","https://archive.org/details/sim_englishwomans-domestic-magazine_1868-1872_9","https://archive.org/details/sim_englishwomans-domestic-magazine_1868-1872_10","https://archive.org/details/sim_englishwomans-domestic-magazine_1868-1872_11","https://archive.org/details/sim_englishwomans-domestic-magazine_1868-1872_12","https://archive.org/details/sim_englishwomans-domestic-magazine_1872-1877_13","https://archive.org/details/sim_englishwomans-domestic-magazine_1872-1877_14","https://archive.org/details/sim_englishwomans-domestic-magazine_1872-1877_15","https://archive.org/details/sim_englishwomans-domestic-magazine_1872-1877_16","https://archive.org/details/sim_englishwomans-domestic-magazine_1872-1877_17","https://archive.org/details/sim_englishwomans-domestic-magazine_1872-1877_17","https://archive.org/details/sim_englishwomans-domestic-magazine_1872-1877_19","https://archive.org/details/sim_englishwomans-domestic-magazine_1872-1877_20","https://archive.org/details/sim_englishwomans-domestic-magazine_1872-1877_21","https://archive.org/details/sim_englishwomans-domestic-magazine_1872-1877_22","https://archive.org/details/sim_englishwomans-domestic-magazine_1877-1879_23","https://archive.org/details/sim_englishwomans-domestic-magazine_1877-1879_24","https://archive.org/details/sim_englishwomans-domestic-magazine_1877-1879_25","https://docs.google.com/document/d/1gJp8b6yPWdRH4cq7HQkbcS4nDtwOAQbQuridhJCa48o","https://docs.google.com/document/d/1gJp8b6yPWdRH4cq7HQkbcS4nDtwOAQbQuridhJCa48o"],
             ];
+        
         document.getElementById('js').textContent = "Loading";
         tary = data.split('#');
         
@@ -107,7 +107,7 @@
             }
         }
         
-        document.getElementById("js").textContent = '<span style="font-style: italic;">Englishwoman\'s Domestic Magazine</span> Search Tool';
+        document.getElementById("js").innerHTML = '<span style="font-style: italic;">Englishwoman\'s Domestic Magazine</span> Search Tool';
         
         document.getElementById("btn").addEventListener("click", function() {
             var sTerm = document.getElementById("Inp").value.toLowerCase();
