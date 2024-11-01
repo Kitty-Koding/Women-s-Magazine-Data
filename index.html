@@ -119,7 +119,7 @@
                         if(resultHtml==='not found, try searching something less specific.'){
                             resultHtml='';
                         }
-                        resultHtml += '<div>Title: '+pdata[i][2]+' | Genre: ' + pdata[i][0] + ' | Page#: '+pdata[i][3]+' | Link: <a href="'+magezines[pdata[i][5].split('')[0]-1][Number(pdata[i][5].split('')[1]+pdata[i][5].split('')[2])-1]+'">Click</a> | Additional Notes: '+pdata[i][10]+'</div>';                    }
+                        resultHtml += '<div>Title: '+pdata[i][2]+' | Genre: ' + pdata[i][0] + ' | Page#: '+pdata[i][3]+' | Link: <a href="'+magezines[pdata[i][5].split('')[0]-1][Number(pdata[i][5].split('')[1]+pdata[i][5].split('')[2])-1]+'/page/'+pdata[i][3]+'">Click</a> | Additional Notes: '+pdata[i][10]+'</div>';                    }
                 }
             }
             
